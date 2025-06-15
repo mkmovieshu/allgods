@@ -1,0 +1,44 @@
+body {
+  font-family: 'Noto Serif Telugu', serif;
+  background: #fff8e1;
+  padding: 20px;
+  color: #4e2600;
+}
+
+.deity-img {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+}
+
+.deity-title {
+  text-align: center;
+  color: #c62828;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  background: #ffcc80;
+  border: 2px solid #ff9800;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.tab:hover {
+  background: #ffe0b2;
+}
+
+.content {
+  display: none;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
