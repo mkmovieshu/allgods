@@ -2,33 +2,67 @@
 <html lang="te">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>భక్తి యాప్</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Devotional App</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="deity-section">
-    <img src="images/shiva.png" class="deity-img" alt="శివుడు">
-    <h1 class="deity-title">శివుడు</h1>
 
-    <div class="tab" onclick="toggleSection(this, 'shiva', 'avatharam')">అవతారం</div>
-    <div class="content" id="avatharam"></div>
+  <!-- =====================  దేవుళ్ల సూచిక  ===================== -->
+  <ul class="deity-list">
+    <li onclick="showDeity('lakshmi')">
+      <img src="images/lakshmi.png"  class="deity-icon" alt="లక్ష్మీ" />
+      <span class="deity-name">లక్ష్మీ</span>
+    </li>
 
-    <div class="tab" onclick="toggleSection(this, 'shiva', 'mahimalu')">మహిమలు</div>
-    <div class="content" id="mahimalu"></div>
+    <li onclick="showDeity('shiva')">
+      <img src="images/shiva.png"   class="deity-icon" alt="శివుడు" />
+      <span class="deity-name">శివుడు</span>
+    </li>
 
-    <div class="tab" onclick="toggleSection(this, 'shiva', 'pujalu')">పూజా విధానం</div>
-    <div class="content" id="pujalu"></div>
+    <li onclick="showDeity('venkateswara')">
+      <img src="images/venkateswara.png" class="deity-icon" alt="వేంకటేశ్వరుడు" />
+      <span class="deity-name">వేంకటేశ్వరుడు</span>
+    </li>
 
-    <div class="tab" onclick="toggleSection(this, 'shiva', 'videos')">వీడియోలు</div>
-    <div class="content" id="videos"></div>
+    <li onclick="showDeity('shani')">
+      <img src="images/shani.png"   class="deity-icon" alt="శని" />
+      <span class="deity-name">శని</span>
+    </li>
 
-    <div class="tab" onclick="toggleSection(this, 'shiva', 'alayalu')">పుణ్యక్షేత్రాలు</div>
-    <div class="content" id="alayalu"></div>
+    <li onclick="showDeity('ganesha')">
+      <img src="images/ganesha.png" class="deity-icon" alt="గణేశుడు" />
+      <span class="deity-name">గణేశుడు</span>
+    </li>
 
-    <div class="tab" onclick="toggleSection(this, 'shiva', 'ravana')">రవాణా సౌకర్యాలు</div>
-    <div class="content" id="ravana"></div>
-  </div>
+    <li onclick="showDeity('hanuman')">
+      <img src="images/hanuman.png" class="deity-icon" alt="హనుమంతుడు" />
+      <span class="deity-name">హనుమంతుడు</span>
+    </li>
+
+    <li onclick="showDeity('saraswati')">
+      <img src="images/saraswati.png" class="deity-icon" alt="సరస్వతి" />
+      <span class="deity-name">సరస్వతి</span>
+    </li>
+
+    <li onclick="showDeity('durga')">
+      <img src="images/durga.png"   class="deity-icon" alt="దుర్గామాత" />
+      <span class="deity-name">దుర్గామాత</span>
+    </li>
+
+    <li onclick="showDeity('krishna')">
+      <img src="images/krishna.png" class="deity-icon" alt="కృష్ణుడు" />
+      <span class="deity-name">కృష్ణుడు</span>
+    </li>
+
+    <li onclick="showDeity('rama')">
+      <img src="images/rama.png"    class="deity-icon" alt="రాముడు" />
+      <span class="deity-name">రాముడు</span>
+    </li>
+  </ul>
+
+  <!-- =====================  డిటెయిల్ సెక్షన్  ===================== -->
+  <div id="detail-box"></div>
 
   <script src="script.js"></script>
 </body>
