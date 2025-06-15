@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>భక్తి యాప్</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="deity-section">
+    <img src="images/shiva.png" class="deity-img" alt="శివుడు">
+    <h1 class="deity-title">శివుడు</h1>
+
+    <div class="tab" onclick="toggleSection(this, 'shiva', 'avatharam')">అవతారం</div>
+    <div class="content" id="avatharam"></div>
+
+    <div class="tab" onclick="toggleSection(this, 'shiva', 'mahimalu')">మహిమలు</div>
+    <div class="content" id="mahimalu"></div>
+
+    <div class="tab" onclick="toggleSection(this, 'shiva', 'pujalu')">పూజా విధానం</div>
+    <div class="content" id="pujalu"></div>
+
+    <div class="tab" onclick="toggleSection(this, 'shiva', 'videos')">వీడియోలు</div>
+    <div class="content" id="videos"></div>
+
+    <div class="tab" onclick="toggleSection(this, 'shiva', 'alayalu')">పుణ్యక్షేత్రాలు</div>
+    <div class="content" id="alayalu"></div>
+
+    <div class="tab" onclick="toggleSection(this, 'shiva', 'ravana')">రవాణా సౌకర్యాలు</div>
+    <div class="content" id="ravana"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
